@@ -565,9 +565,7 @@ y_{2} & = & e^{-2x}\int\frac{e^{\int\frac{1}{x}-2dx}}{e^{-4x}}dx\\
 y_{2} & = & e^{-2x}\int\frac{e^{\ln\left(x\right)-2x}}{e^{-4x}}dx\\
 y_{2} & = & e^{-2x}\int\frac{e^{\ln\left(x\right)}e^{-2x}}{e^{-4x}}dx\\
 y_{2} & = & e^{-2x}\int xe^{2x}dx\\
-y_{2} & = & e^{-2x}\left(x\frac{e^{2x}}{2}-\int\frac{e^{2x}}{2}dx\right)\\
- & = & e^{-2x}\left(x\frac{e^{2x}}{2}-\frac{e^{2x}}{4}\right)\\
- & = & \frac{1}{4}\left(2x-1\right)
+y_{2} & =
 \end{eqnarray*}
 
 \end_inset
