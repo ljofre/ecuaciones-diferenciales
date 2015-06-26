@@ -93,55 +93,44 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Abstract
-El objetivo de curso es introducir al alumno los conceptos y métodos básicos
- de ecuaciones diferenciales ordinarias mostrando sus diversas aplicaciones
- en distintos ámbitos de la Ingeniería.
- El curso analiza en detalle las ecuaciones diferenciales de primer y segundo
- orden, los sistemas lineales de ecuaciones diferenciales y diversos métodos
- de resolución.
- También presenta herramientas del análisis cualitativo de las soluciones.
- En el presente texto preparado espacialmente para el curso se entregan
- los procedimientos básicos y ejercicios propuestos que el alumno debe desarroll
-ar.
+\begin_layout Section
+Soluciones de una ecuación diferencial
 \end_layout
 
-\begin_layout Section
-Introducción
+\begin_layout Example
+La forma de solucionar la siguiente ecuación diferencial es despejando las
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ y las 
+\begin_inset Formula $y$
+\end_inset
+
+ a cada lado de la ecuación y luego integrando.
+ No siempre se puede hacer esto en todas las ecuaciones diferenciales de
+ primer orden, pero este sería el caso más simple.
+ Note también que la integral genera una constante de integración 
+\begin_inset Formula $C$
+\end_inset
+
+ que denota infinitas soluciones para esta ecuación diferencial.
+ Para encontrar la constante de integración debemos imponer condiciones
+ adicionales, llamadas condiciones iniciales, que es un punto de la curva
+ por donde pasa la curva, como por ejemplo 
+\begin_inset Formula $y\left(0\right)=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Las ecuaciones diferenciales son un tipo de ecuaciones cuya solución son
- el espacio de las funciones.
- Estas ecuaciones aparecen desde la física cuando se intenta modelar sistemas
- dinámicos.
- Las ecuaciones diferenciales nacen al intentar encontrar leyes que no relaciona
-n de forma simple las magnitudes, si no más bien, la dependencia entre la
- magnitud buscada y sus derivadas.
- 
-\end_layout
-
-\begin_layout Exercise
-Encuentre la solución de la siguiente ecuación diferencial
-\end_layout
-
-\begin_layout Exercise
 \begin_inset Formula 
 \begin{eqnarray*}
 \frac{dy}{dx} & = & f\left(x\right)\\
 dy & = & f\left(x\right)dx\\
 y & = & \int f\left(x\right)dx+C
 \end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-La constante de integración dice que hay infinitas soluciones
-\end_layout
 
 \end_inset
 
@@ -153,7 +142,16 @@ Verificar que
 \begin_inset Formula $y=x^{4}/16$
 \end_inset
 
- es solución de la ecuación diferencial 
+ es solución de la ecuación diferencial: Consiste en encontrar 
+\begin_inset Formula $y$
+\end_inset
+
+ e 
+\begin_inset Formula $y'$
+\end_inset
+
+ desde la supuesta solución y constatar que la ecuación constituye una identidad.
+ 
 \begin_inset Formula 
 \[
 \frac{dy}{dx}=xy^{\frac{1}{2}}
@@ -445,7 +443,7 @@ M\left(x,y\right)dx+N\left(x,y\right)dy=0
 
 \end_inset
 
-también puede ser representada por la forma 
+que también puede ser representada por la forma 
 \begin_inset Formula 
 \[
 \frac{dy}{dx}=F\left(x,y\right)
@@ -453,7 +451,7 @@ también puede ser representada por la forma
 
 \end_inset
 
-si 
+si cumple la siguiente condición 
 \begin_inset Formula 
 \[
 F\left(tx,ty\right)=F\left(x,y\right)
@@ -487,16 +485,7 @@ x\frac{du}{dx} & = & F\left(1,u\right)-u\\
 \end_layout
 
 \begin_layout Example
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Ecuación diferencial homogénea
-\end_layout
-
-\end_inset
-
-Resolver la siguiente ecuación diferencial
+ Resolver la siguiente ecuación diferencial
 \end_layout
 
 \begin_layout Example
@@ -965,11 +954,7 @@ z=y^{1-n}\to\frac{dz}{dx}=\left(1-n\right)y^{-n}\frac{dy}{dx}\to\frac{1}{\left(1
 
 \end_inset
 
-con ello, al dividir en la ecuación diferencial por ambos lados por 
-\begin_inset Formula $y^{n}$
-\end_inset
-
- nos queda que
+se convierte en una ecuación lineal de primer orden:
 \begin_inset Formula 
 \begin{eqnarray*}
 y^{-n}\frac{dy}{dx}+p\left(x\right)y^{1-n} & = & q\left(x\right)\\
@@ -979,24 +964,19 @@ y^{-n}\frac{dy}{dx}+p\left(x\right)y^{1-n} & = & q\left(x\right)\\
 
 \end_inset
 
-que es una ecuación diferencial lineal con factor integrante 
+Con factor integrante 
 \begin_inset Formula $e^{\int\left(1-n\right)p\left(x\right)dx}$
 \end_inset
 
 .
- al multiplicar a ambos lados por el factor integrante logramos la forma
- diferencial.
- 
+ Generamos al derivada de producto 
 \begin_inset Formula 
 \begin{eqnarray*}
 e^{\int\left(1-n\right)p\left(x\right)dx}\frac{dz}{dx}+e^{\int\left(1-n\right)p\left(x\right)dx}\left(1-n\right)p\left(x\right)z & = & e^{\int\left(1-n\right)p\left(x\right)dx}\left(1-n\right)q\left(x\right)\\
 d\left[e^{\int\left(1-n\right)p\left(x\right)dx}z\right] & = & e^{\int\left(1-n\right)p\left(x\right)dx}\left(1-n\right)q\left(x\right)dx\\
 \mbox{integramos}\\
 e^{\int\left(1-n\right)p\left(x\right)dx}z & = & \int e^{\int\left(1-n\right)p\left(x\right)dx}\left(1-n\right)q\left(x\right)dx+C\\
-z & = & e^{-\int\left(1-n\right)p\left(x\right)dx}\int e^{\int\left(1-n\right)p\left(x\right)dx}\left(1-n\right)q\left(x\right)dx+C\\
-y^{1-n} & = & e^{-\int\left(1-n\right)p\left(x\right)dx}\left(\int e^{\int\left(1-n\right)p\left(x\right)dx}\left(1-n\right)q\left(x\right)dx+C\right)\\
-y\left(x\right) & = & \sqrt[1-n]{e^{-\int\left(1-n\right)p\left(x\right)dx}\left(\int e^{\int\left(1-n\right)p\left(x\right)dx}\left(1-n\right)q\left(x\right)dx+C\right)}\\
-y\left(x\right) & = & \sqrt[1-n]{\frac{\left(\int e^{\int\left(1-n\right)p\left(x\right)dx}\left(1-n\right)q\left(x\right)dx+C\right)}{e^{\int\left(1-n\right)p\left(x\right)dx}}}\\
+\mbox{luego}\\
 y\left(x\right) & = & \sqrt[n-1]{\frac{e^{\int\left(1-n\right)p\left(x\right)dx}}{\int e^{\int\left(1-n\right)p\left(x\right)dx}\left(1-n\right)q\left(x\right)dx+C}}
 \end{eqnarray*}
 
@@ -1006,7 +986,18 @@ y\left(x\right) & = & \sqrt[n-1]{\frac{e^{\int\left(1-n\right)p\left(x\right)dx}
 \end_layout
 
 \begin_layout Example
-Resolver la siguiente ecuación diferencial 
+Resolver la siguiente ecuación diferencial: Luego de pasarla a la forma
+ estándar nos damos cuenta que es una ecuación de Bernoulli con 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+ Conforme a ello hacemos la sustitución 
+\begin_inset Formula $z=y^{1-2}=y^{-1}$
+\end_inset
+
+ para generar una ecuación lineal de primer orden.
+ 
 \begin_inset Formula 
 \[
 x\frac{dy}{dx}+y=xy^{2}
@@ -1018,7 +1009,7 @@ x\frac{dy}{dx}+y=xy^{2}
 \end_layout
 
 \begin_layout Standard
-Paras a su forma normal 
+Para su forma estándar 
 \begin_inset Formula 
 \begin{eqnarray*}
 \frac{dy}{dx}+\frac{1}{x}y & = & y^{2}\\

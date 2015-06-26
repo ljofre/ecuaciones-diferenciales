@@ -227,7 +227,7 @@ Resolver
 \end_layout
 
 \begin_layout Standard
-al resolver la ecuación homogenea asociada 
+al resolver la ecuación homogénea asociada 
 \begin_inset Formula $y''+4y'-2y=0\Rightarrow y_{c}=c_{1}e^{-\left(2+\sqrt{6}\right)x}+c_{2}e^{\left(-2+\sqrt{6}\right)x}$
 \end_inset
 
@@ -299,16 +299,29 @@ y''-y'+y=2\sin\left(3x\right)
 
 \end_layout
 
-\begin_layout Standard
-la solución particular tiene la forma 
-\begin_inset Formula $y_{p}=A\cos\left(3x\right)+B\sin\left(3x\right)$
+\begin_layout Problem
+Como 
+\begin_inset Formula $f\left(x\right)=2\sin\left(3x\right)$
+\end_inset
+
+ entonces
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+y_{p} & = & A\cos\left(3x\right)+B\sin\left(3x\right)\\
+y_{p}' & = & -3\sin\left(3x\right)+3B\cos\left(3x\right)\\
+y''_{p} & = & -9A\cos\left(3x\right)-9B\sin\left(3x\right)
+\end{eqnarray*}
+
 \end_inset
 
 , luego al diferenciar 
 \begin_inset Formula $y_{p}$
 \end_inset
 
- y sustituir en la ecuación diferencial, y sacando factor común queda que:
+ y sustituir en la ecuación diferencial, y luego factorizando:
 \begin_inset Formula 
 \[
 \left(-8A-3B\right)\cos\left(3x\right)+\left(3A-8B\right)\sin\left(3x\right)=2\sin\left(3x\right)
@@ -341,6 +354,133 @@ y_{p}=\frac{6}{73}\cos\left(3x\right)-\frac{16}{73}\sin\left(3x\right)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Problem
+Determinar la solución general de la siguiente ecuación diferencial
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+y''+4y'+3y=6xe^{-3x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+buscamos las soluciones de la ecuación característica para encontrar las
+ soluciones de la ecuación homogénea:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+m^{2}+4m+3m & = & 0\\
+m & = & \frac{-4\pm\sqrt{16-12}}{2}\\
+m & = & \frac{-4\pm2}{2}\\
+m & = & -2\pm1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo que la solución de la ecuación homogénea está dada por 
+\begin_inset Formula $y_{h}=c_{1}e^{-3x}+c_{2}e^{-x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+la ecuación particular está definida como 
+\begin_inset Formula $y_{p}=Ae^{-3x}x^{2}+Be^{-3x}$
+\end_inset
+
+ para poder conservar la independencia lineal entre las soluciones particulares
+ y de la homogénea.
+\end_layout
+
+\begin_layout Problem
+6
+\begin_inset Formula 
+\begin{eqnarray*}
+e^{3x}y_{p} & = & Ax^{2}+Bx\\
+e^{3x}y'_{p}+3e^{3x}y_{p} & = & 2Ax+B\\
+e^{3x}y''_{p}+6e^{3x}y'_{p}+9e^{3x}y & = & 2A
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Lo que es equivalente a
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+y_{p} & = & e^{-3x}\left(Ax^{2}+Bx\right)\\
+y'_{p}+3y_{p} & = & e^{-3x}\left(2Ax+B\right)\\
+y''_{p}+6y'_{p}+9y_{p} & = & e^{-3x}2A
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+La tercera ecuación se puede descomponer 
+\begin_inset Formula 
+\begin{eqnarray*}
+y''_{p}+6y'_{p}+9y_{p} & = & e^{-3x}2A\\
+6xe^{-3x}+2y'_{p}+6y_{p} & = & e^{-3x}2A\\
+6xe^{-3x}+2\left(y'_{p}+3y_{p}\right) & = & e^{-3x}2A\\
+6xe^{-3x}+2\left(e^{-3x}\left(2Ax+B\right)\right) & = & e^{-3x}2A\\
+6x+4Ax+2B & = & 2A\\
+6x & = & -4Ax+2A-2B
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo que 
+\begin_inset Formula $A=-\frac{3}{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $B=-\frac{3}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo que la solución general es 
+\begin_inset Formula 
+\[
+y=c_{1}e^{-3x}+c_{2}e^{-x}-\frac{3}{2}x^{2}e^{-3x}-\frac{3}{2}e^{-3x}
+\]
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Section

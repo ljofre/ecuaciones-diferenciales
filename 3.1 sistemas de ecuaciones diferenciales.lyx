@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -16,13 +16,13 @@ theorems-ams-extended
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -33,15 +33,24 @@ theorems-ams-extended
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -89,7 +98,7 @@ Valores propios complejos conjugados
 \end_layout
 
 \begin_layout Problem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -198,7 +207,7 @@ X\left(t\right)=c_{1}K_{1}e^{\lambda_{1}t}+c_{2}K_{2}e^{\lambda_{2}t}
 \end_layout
 
 \begin_layout Problem
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -208,6 +217,165 @@ Valores propios iguales que generan vectores propios distintos
 \end_inset
 
  Resuelva el siguiente sistema de ecuaciones diferenciales
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\dot{X}=\left[\begin{array}{cccc}
+6 & 6 & -3 & 2\\
+-4 & -4 & 2 & 0\\
+8 & 7 & -4 & 4\\
+1 & 0 & -1 & -2
+\end{array}\right]X
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Buscamos los valores y vectores propios
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+\det\left[\begin{array}{cccc}
+6-\lambda & 6 & -3 & 2\\
+-4 & -4-\lambda & 2 & 0\\
+8 & 7 & -4-\lambda & 4\\
+1 & 0 & -1 & -2-\lambda
+\end{array}\right] & = & 0\\
+\lambda^{4}+4\lambda^{3}+8\lambda^{2}+8\lambda+4 & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo que tenemos los siguientes valores propios 
+\begin_inset Formula $\lambda_{1,2}=-1\pm i$
+\end_inset
+
+ y 
+\begin_inset Formula $\lambda_{3,4}=-1\pm i$
+\end_inset
+
+ por lo que resta calcular los vectores propios:
+\end_layout
+
+\begin_layout Problem
+para 
+\begin_inset Formula $\lambda_{1}=-1+i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada la solución 
+\begin_inset Formula 
+\begin{eqnarray*}
+x\left(0\right) & = & c_{1}\left(\begin{array}{c}
+2\\
+0\\
+4\\
+-1
+\end{array}\right)+c_{2}\left(\begin{array}{c}
+0\\
+0\\
+0\\
+1
+\end{array}\right)+c_{3}\left(\begin{array}{c}
+1\\
+-2\\
+0\\
+2
+\end{array}\right)+c_{4}\left(\begin{array}{c}
+2\\
+-2\\
+0\\
+0
+\end{array}\right)\\
+\left(\begin{array}{c}
+1\\
+2\\
+-3\\
+1
+\end{array}\right) & = & \left[\begin{array}{cccc}
+2 & 0 & 1 & 2\\
+0 & 0 & -2 & -2\\
+4 & 0 & 0 & 0\\
+-1 & 1 & 2 & 0
+\end{array}\right]\left(\begin{array}{c}
+c_{1}\\
+c_{2}\\
+c_{3}\\
+c_{4}
+\end{array}\right)\\
+\left(\begin{array}{c}
+c_{1}\\
+c_{2}\\
+c_{3}\\
+c_{4}
+\end{array}\right) & = & \left[\begin{array}{cccc}
+2 & 0 & 1 & 2\\
+0 & 0 & -2 & -2\\
+4 & 0 & 0 & 0\\
+-1 & 1 & 2 & 0
+\end{array}\right]^{-1}\left(\begin{array}{c}
+1\\
+2\\
+-3\\
+1
+\end{array}\right)\\
+\left(\begin{array}{c}
+c_{1}\\
+c_{2}\\
+c_{3}\\
+c_{4}
+\end{array}\right) & = & \frac{1}{4}\left[\begin{array}{cccc}
+0 & 0 & 1 & 0\\
+8 & 8 & -3 & 4\\
+-4 & -4 & 2 & 0\\
+4 & 2 & -2 & 0
+\end{array}\right]\left(\begin{array}{c}
+1\\
+2\\
+-3\\
+1
+\end{array}\right)\\
+\left(\begin{array}{c}
+c_{1}\\
+c_{2}\\
+c_{3}\\
+c_{4}
+\end{array}\right) & = & \frac{1}{4}\left(\begin{array}{c}
+-3\\
+8\cdot1+8\cdot2-3\cdot\left(-3\right)+4\cdot1\\
+\left(-4\right)\cdot1+\left(-4\right)\cdot2+2\cdot\left(-3\right)\\
+4\cdot1+2\cdot2-2\cdot\left(-3\right)
+\end{array}\right)\\
+\left(\begin{array}{c}
+c_{1}\\
+c_{2}\\
+c_{3}\\
+c_{4}
+\end{array}\right) & = & \left(\begin{array}{c}
+\frac{3}{4}\\
+\frac{49}{4}\\
+-\frac{9}{2}\\
+\frac{7}{2}
+\end{array}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
