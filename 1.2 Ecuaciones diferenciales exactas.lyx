@@ -277,10 +277,34 @@ yd\left(x^{2}\right)+x^{2}dy-dy & = & 0\\
 
 \end_layout
 
+\begin_layout Example
+Resolver 
+\begin_inset Formula $\left(e^{2y}-y\cos xy\right)dx+\left(2xe^{2y}-x\cos xy+2y\right)dy=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial M}{dy} & = & 2e^{2y}-y\cos\left(xy\right)x-\cos\left(xy\right)\\
+\frac{\partial N}{dx} & = & 2e^{2y}-y\cos\left(xy\right)x-\cos\left(xy\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+por lo que es una ecuación diferencial exacta
+\end_layout
+
 \begin_layout Subsection
 
 \lang spanish
-Factor de integración
+Factor Integrante
 \end_layout
 
 \begin_layout Standard

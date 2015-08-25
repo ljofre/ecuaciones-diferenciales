@@ -367,7 +367,7 @@ Determinar la solución general de la siguiente ecuación diferencial
 \begin_layout Problem
 \begin_inset Formula 
 \[
-y''+4y'+3y=6xe^{-3x}
+y''+4y'+3y=6xe^{-2x}
 \]
 
 \end_inset
@@ -404,7 +404,7 @@ por lo que la solución de la ecuación homogénea está dada por
 
 \begin_layout Problem
 la ecuación particular está definida como 
-\begin_inset Formula $y_{p}=Ae^{-3x}x^{2}+Be^{-3x}$
+\begin_inset Formula $y_{p}=Axe^{-2x}+Be^{-2x}$
 \end_inset
 
  para poder conservar la independencia lineal entre las soluciones particulares
@@ -415,9 +415,9 @@ la ecuación particular está definida como
 6
 \begin_inset Formula 
 \begin{eqnarray*}
-e^{3x}y_{p} & = & Ax^{2}+Bx\\
-e^{3x}y'_{p}+3e^{3x}y_{p} & = & 2Ax+B\\
-e^{3x}y''_{p}+6e^{3x}y'_{p}+9e^{3x}y & = & 2A
+e^{2x}y_{p} & = & Ax+B\\
+e^{2x}y'_{p}+2e^{2x}y_{p} & = & A\\
+e^{2x}y''_{p}++2e^{2x}y'_{p}+2\left(e^{2x}y'_{p}+2e^{2x}y_{p}\right) & = & 0
 \end{eqnarray*}
 
 \end_inset
@@ -432,9 +432,9 @@ Lo que es equivalente a
 \begin_layout Problem
 \begin_inset Formula 
 \begin{eqnarray*}
-y_{p} & = & e^{-3x}\left(Ax^{2}+Bx\right)\\
-y'_{p}+3y_{p} & = & e^{-3x}\left(2Ax+B\right)\\
-y''_{p}+6y'_{p}+9y_{p} & = & e^{-3x}2A
+y_{p} & = & e^{-2x}\left(Ax+B\right)\\
+y'_{p}+2y_{p} & = & Ae^{-2x}\\
+y''_{p}+4y'_{p}+4y_{p} & = & 0
 \end{eqnarray*}
 
 \end_inset
@@ -446,12 +446,9 @@ y''_{p}+6y'_{p}+9y_{p} & = & e^{-3x}2A
 La tercera ecuación se puede descomponer 
 \begin_inset Formula 
 \begin{eqnarray*}
-y''_{p}+6y'_{p}+9y_{p} & = & e^{-3x}2A\\
-6xe^{-3x}+2y'_{p}+6y_{p} & = & e^{-3x}2A\\
-6xe^{-3x}+2\left(y'_{p}+3y_{p}\right) & = & e^{-3x}2A\\
-6xe^{-3x}+2\left(e^{-3x}\left(2Ax+B\right)\right) & = & e^{-3x}2A\\
-6x+4Ax+2B & = & 2A\\
-6x & = & -4Ax+2A-2B
+y''_{p}+4y'_{p}+4y_{p} & = & 0\\
+6xe^{-2x}+e^{-2x}\left(Ax+B\right) & = & 0\\
+6x+\left(Ax+B\right) & = & 0
 \end{eqnarray*}
 
 \end_inset
@@ -461,21 +458,22 @@ y''_{p}+6y'_{p}+9y_{p} & = & e^{-3x}2A\\
 
 \begin_layout Problem
 por lo que 
-\begin_inset Formula $A=-\frac{3}{2}$
+\begin_inset Formula $A=-6$
 \end_inset
 
  y 
-\begin_inset Formula $B=-\frac{3}{2}$
+\begin_inset Formula $B=0$
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
 \begin_layout Problem
 por lo que la solución general es 
 \begin_inset Formula 
 \[
-y=c_{1}e^{-3x}+c_{2}e^{-x}-\frac{3}{2}x^{2}e^{-3x}-\frac{3}{2}e^{-3x}
+y=c_{1}e^{-3x}+c_{2}e^{-x}-6e^{-3x}
 \]
 
 \end_inset
@@ -483,6 +481,7 @@ y=c_{1}e^{-3x}+c_{2}e^{-x}-\frac{3}{2}x^{2}e^{-3x}-\frac{3}{2}e^{-3x}
  
 \end_layout
 
+\end_deeper
 \begin_layout Section
 Reducción de orden
 \end_layout
