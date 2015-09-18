@@ -1,0 +1,228 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Trabajo ecuaciones diferenciales
+\end_layout
+
+\begin_layout Author
+Universidad Gabriela Mistral
+\end_layout
+
+\begin_layout Author
+Prof: Gustavo Ceballos
+\begin_inset Newline newline
+\end_inset
+
+Ayudante: Leonardo Jofré
+\end_layout
+
+\begin_layout Standard
+El objetivo de este trabajo es profundizar los conocimientos de la asignatura
+ mediante le investigación sobre sus tópicos.
+ Desarróllelo tomando en cuenta que estos contenidos serán eventualmente
+ evaluados.
+ La cantidad de integrantes es a lo más de dos personas por trabajo.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Un problema aplicado
+\end_layout
+
+\end_inset
+
+Una lancha a motor se mueve en agua calma con velocidad de 
+\begin_inset Formula $10\frac{\mbox{km}}{\mbox{h}}$
+\end_inset
+
+.
+ A plena carrera el motos fue apagado, y después de 
+\begin_inset Formula $20\mbox{seg}$
+\end_inset
+
+ la velocidad de la lancha disminuyó hasta 
+\begin_inset Formula $v_{1}=6\frac{\mbox{km}}{\mbox{h}}$
+\end_inset
+
+.
+ Determinar la velocidad de la lancha a dos minutos después de parar el
+ motor, considerando que la resistencia del agua es proporcional al movimiento
+ de la lancha.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Función Gamma
+\end_layout
+
+\end_inset
+
+ La función gamma se define mediante la siguiente integral 
+\begin_inset Formula 
+\[
+\Gamma\left(\alpha\right)=\int_{0}^{\infty}t^{\alpha-1}e^{-t}dt
+\]
+
+\end_inset
+
+ con 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+.
+ Demuestre que 
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ t^{\alpha}\right\} =\frac{\Gamma\left(\alpha+1\right)}{s^{\alpha+1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+demostración
+\end_layout
+
+\end_inset
+
+Demostrar que si 
+\begin_inset Formula $\mathcal{L}\left\{ f\left(t\right)\right\} =F\left(s\right)$
+\end_inset
+
+ entonces 
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ t^{n}f\left(t\right)\right\} =\left(-1\right)^{n}\frac{d^{n}}{ds^{n}}F\left(s\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+¿Coeficientes no constantes y Laplace?
+\end_layout
+
+\end_inset
+
+Resolver la siguiente ecuación diferencial mediante transformada de Laplace:
+ 
+\begin_inset Formula $y''-ty'+y=1$
+\end_inset
+
+ bajo las condiciones iniciales 
+\begin_inset Formula $y\left(0\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $y'\left(0\right)=2$
+\end_inset
+
+.
+ Hint: Use la demostración del problema 3.
+\end_layout
+
+\end_body
+\end_document

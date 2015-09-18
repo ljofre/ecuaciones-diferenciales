@@ -73,10 +73,12 @@ theorems-ams-extended
 
 \begin_body
 
-\begin_layout Section
+\begin_layout Title
+Ecuaciones diferenciales exactas
+\end_layout
 
-\lang spanish
-Ecuación diferencial exacta
+\begin_layout Author
+Leonardo Andrés Jofré Flor
 \end_layout
 
 \begin_layout Standard
@@ -310,11 +312,13 @@ Factor Integrante
 \begin_layout Standard
 
 \lang spanish
-Ocurre que no siempre se cumple que condición de ecuación diferencial exacta,
- por lo que hay que construir la ecuación.
- Para construir la condición de exactitud se debe encontrar y multiplicar
- una función que hace que se cumpla la exactitud, dicha función se llama
- factor integrante.
+Ocurre que no siempre se cumple la condición de ecuación diferencial exacta.
+ Para construir esta condición se debe encontrar y multiplicar una función
+ 
+\begin_inset Formula $\mu$
+\end_inset
+
+ que haga que se cumpla, dicha función se llama factor integrante.
 \end_layout
 
 \begin_layout Definition
@@ -332,11 +336,19 @@ Factor integrante
 \end_inset
 
  Si la ecuación diferencial 
-\begin_inset Formula $M\left(x,y\right)dx+N\left(x,y\right)dy=0$
+\begin_inset Formula 
+\begin{eqnarray*}
+M\left(x,y\right)dx+N\left(x,y\right)dy & = & 0
+\end{eqnarray*}
+
 \end_inset
 
  no es una ecuación diferencial exacta pero la ecuación diferencial 
-\begin_inset Formula $\mu\left(x,y\right)M\left(x,y\right)dx+\mu\left(x,y\right)N\left(x,y\right)dy=0$
+\begin_inset Formula 
+\[
+\mu\left(x,y\right)M\left(x,y\right)dx+\mu\left(x,y\right)N\left(x,y\right)dy=0
+\]
+
 \end_inset
 
  si lo es, entonces se dice que la función 
@@ -499,7 +511,7 @@ Buscamos cada uno de las funciones
 
 \end_inset
 
-es un factor integrantes.
+es un factor integrantes, por lo que
 \end_layout
 
 \begin_layout Standard
@@ -513,6 +525,12 @@ x^{-2}\left(2x^{2}+y\right)dx+x^{-2}\left(x^{2}y-x\right)dy=0
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+es exacta
 \end_layout
 
 \end_body

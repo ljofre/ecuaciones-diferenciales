@@ -1,0 +1,204 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Prueba solemne 1 ecuaciones diferenciales
+\end_layout
+
+\begin_layout Author
+Universidad Gabriela Mistral
+\end_layout
+
+\begin_layout Problem
+Resuelva la siguiente ecuación diferencial 
+\begin_inset Formula 
+\[
+\left(x^{2}+y^{2}\right)dx+\left(x^{2}-xy\right)dy=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+se puede observar por los grados de cada uno de los sumandos de los polinomios
+ que es una ecuación diferencial homogénea.
+\begin_inset Formula 
+\[
+\frac{dy}{dx}=-\frac{\left(x^{2}+y^{2}\right)}{\left(x^{2}-xy\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+verificamos que es una ecuación diferencial homogénea con 
+\begin_inset Formula $f\left(x,y\right)=-\frac{\left(x^{2}+y^{2}\right)}{\left(x^{2}-xy\right)}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(\lambda x,\lambda y\right) & = & -\frac{\left(\lambda^{2}x^{2}+\lambda^{2}y^{2}\right)}{\left(\lambda^{2}x^{2}-\lambda^{2}xy\right)}\\
+f\left(\lambda x,\lambda y\right) & = & -\frac{\left(x^{2}+y^{2}\right)}{\left(x^{2}-xy\right)}\\
+f\left(\lambda x,\lambda y\right) & = & f\left(x,y\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo tanto es exacta, luego, mediante la sustitución 
+\begin_inset Formula $y=vx$
+\end_inset
+
+ con lo que 
+\begin_inset Formula $\frac{dy}{dx}=v+x\frac{dv}{dx}$
+\end_inset
+
+ y también 
+\begin_inset Formula $f\left(x,y\right)=f\left(x,vx\right)=f\left(1,v\right)$
+\end_inset
+
+, que luego remplazando.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+v+x\frac{dv}{dx} & = & -\frac{\left(1+v^{2}\right)}{\left(1-v\right)}\\
+x\frac{dv}{dx} & = & -\frac{\left(1+v^{2}\right)}{\left(1-v\right)}-v\\
+x\frac{dv}{dx} & = & \frac{1+v}{v-1}\\
+\frac{v-1}{1+v}dv & = & \frac{dx}{x}\\
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Resuelva la siguiente ecuación diferencial exacta 
+\begin_inset Formula 
+\[
+\left(x^{3}+y^{3}\right)dx+3xy^{2}dy=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Resolver 
+\begin_inset Formula $\frac{dy}{dx}=\left(-5x+y\right)^{2}-4$
+\end_inset
+
+ haciendo la sustitución de variable auxiliar 
+\begin_inset Formula $u=-5x+y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Resolver la ecuación diferencial llevando a su forma lineal 
+\begin_inset Formula 
+\[
+xy'+y=2x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

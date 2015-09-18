@@ -508,27 +508,27 @@ Si consideramos
 \begin_inset Formula $F\left(tx,ty\right)=F\left(x,y\right)$
 \end_inset
 
+, esto implica que mediante la sustitución 
+\begin_inset Formula $y=vx\implies\frac{dy}{dx}=v+x\frac{dv}{dx}$
+\end_inset
+
+ y además 
+\begin_inset Formula $f\left(x,y\right)=f\left(x,vx\right)=f\left(1,v\right)$
+\end_inset
+
 
 \end_layout
 
 \begin_layout Example
-dejamos la ecuación en su forma estándar
+con lo que la ecuación diferencial queda 
 \begin_inset Formula 
 \begin{eqnarray*}
-\frac{dy}{dx} & = & \frac{x}{y}+\frac{y}{x}\\
-\frac{dy}{dx} & = & \frac{x^{2}+y^{2}}{xy}\\
-xydy & = & \left(x^{2}+y^{2}\right)dx\\
-\mbox{remplazamos }y=ux\\
-x\left(ux\right)d\left(ux\right) & = & \left(x^{2}+\left(ux\right)^{2}\right)dx\\
-ux^{2}\left(xdu+udx\right) & = & \left(x^{2}+\left(ux\right)^{2}\right)dx\\
-ux^{3}du+u^{2}x^{2}dx & = & x^{2}\left(1+u^{2}\right)dx\\
-uxdu+u^{2}dx & = & \left(1+u^{2}\right)dx\\
-uxdu & = & dx\\
-udu & = & \frac{dx}{x}\\
-\int udu & = & \int\frac{dx}{x}+\mathcal{C}\\
-\frac{u^{2}}{2} & = & \ln\left(x\right)+\mathcal{C}\\
-\mbox{sabemos que }u=\frac{y}{x}\\
-\frac{\left(\frac{y}{x}\right)^{2}}{2} & = & \ln\left(x\right)+\mathcal{C}
+v+x\frac{dv}{dx} & = & \frac{1}{v}+v\\
+x\frac{dv}{dx} & = & \frac{1}{v}\\
+vdv & = & \frac{dx}{x}\\
+\int vdv & = & \int\frac{dx}{x}\\
+\frac{v^{2}}{2} & = & \ln\left|x\right|+c\\
+\frac{\left(\frac{y}{x}\right)^{2}}{2} & = & \ln\left|x\right|+c
 \end{eqnarray*}
 
 \end_inset
@@ -1053,6 +1053,22 @@ y & = & \frac{1}{\left(C-x\right)x}
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Section
+Ecuación de Ricatti
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Section
+Ecuación de Clairaut
+\end_layout
+
+\begin_layout --Separator--
 
 \end_layout
 
