@@ -85,6 +85,10 @@ theorems-sec
 Ecuaciones diferenciales lineales de orden superior
 \end_layout
 
+\begin_layout Author
+Leonardo Jofre, clases particulares Whatsapp:+56 9 7818 0331
+\end_layout
+
 \begin_layout Section
 Ecuaciones lineales homogéneas
 \end_layout
@@ -468,7 +472,6 @@ por lo que
 
 \end_layout
 
-\begin_deeper
 \begin_layout Problem
 por lo que la solución general es 
 \begin_inset Formula 
@@ -478,10 +481,25 @@ y=c_{1}e^{-3x}+c_{2}e^{-x}-6e^{-3x}
 
 \end_inset
 
- 
+
 \end_layout
 
-\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Section
+Método del anulador
+\end_layout
+
+\begin_layout Standard
+El método del anulador es muy parecido al de los coeficientes indeterminados
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
 \begin_layout Section
 Reducción de orden
 \end_layout

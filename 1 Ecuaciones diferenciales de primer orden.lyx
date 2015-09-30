@@ -1056,8 +1056,62 @@ y & = & \frac{1}{\left(C-x\right)x}
 
 \end_layout
 
+\begin_layout Standard
+Una forma simplificada de plantear el problema, es solucionar el problema
+ del tipo 
+\begin_inset Formula $\frac{1}{1-n}\frac{dz}{dx}+p\left(x\right)z=f\left(x\right)$
+\end_inset
+
+ sin necesidad de hacer las operaciones algebraicas desde la ecuación diferencia
+l original.
+\end_layout
+
 \begin_layout Section
 Ecuación de Ricatti
+\end_layout
+
+\begin_layout Standard
+La ecuación de Ricatti es de la forma 
+\begin_inset Formula $\frac{dy}{dx}=p\left(x\right)y^{2}+q\left(x\right)y+r\left(x\right)$
+\end_inset
+
+ con una solución particular conocida 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+.
+ la solución general de la ecuación es de la forma 
+\begin_inset Formula $y=y_{1}+\frac{1}{z}$
+\end_inset
+
+ donde 
+\begin_inset Formula $z$
+\end_inset
+
+ se obtiene solucionando la siguiente ecuación diferencial 
+\begin_inset Formula $\frac{dz}{dx}+\left(2p\left(x\right)y_{1}+q\left(x\right)\right)z=-p\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Resolver la siguiente ecuación diferencial
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula 
+\[
+y'=y^{2}+\frac{2}{x}y+\frac{2}{x^{2}}
+\]
+
+\end_inset
+
+con la solución particular conocida 
+\begin_inset Formula $y_{1}=-\frac{2}{x}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout --Separator--

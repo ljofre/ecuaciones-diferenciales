@@ -115,7 +115,6 @@ verificamos que es una ecuación diferencial homogénea con
 \begin_inset Formula 
 \begin{eqnarray*}
 f\left(\lambda x,\lambda y\right) & = & -\frac{\left(\lambda^{2}x^{2}+\lambda^{2}y^{2}\right)}{\left(\lambda^{2}x^{2}-\lambda^{2}xy\right)}\\
-f\left(\lambda x,\lambda y\right) & = & -\frac{\left(x^{2}+y^{2}\right)}{\left(x^{2}-xy\right)}\\
 f\left(\lambda x,\lambda y\right) & = & f\left(x,y\right)
 \end{eqnarray*}
 
@@ -143,8 +142,12 @@ por lo tanto es exacta, luego, mediante la sustitución
 \begin{eqnarray*}
 v+x\frac{dv}{dx} & = & -\frac{\left(1+v^{2}\right)}{\left(1-v\right)}\\
 x\frac{dv}{dx} & = & -\frac{\left(1+v^{2}\right)}{\left(1-v\right)}-v\\
-x\frac{dv}{dx} & = & \frac{1+v}{v-1}\\
-\frac{v-1}{1+v}dv & = & \frac{dx}{x}\\
+x\frac{dv}{dx} & = & \frac{v+1}{v-1}\\
+\frac{v-1}{v+1}dv & = & \frac{dx}{x}\\
+\left(1-\frac{2}{v+1}\right)dv & = & \frac{dx}{x}\\
+\int\left(1-\frac{2}{v+1}\right)dv & = & \int\frac{dx}{x}\\
+v-2\ln\left|v+1\right| & = & \ln\left|x\right|+c\\
+\frac{y}{x}-2\ln\left|\frac{y}{x}+1\right| & = & \ln\left|x\right|+c
 \end{eqnarray*}
 
 \end_inset
@@ -168,7 +171,78 @@ Resuelva la siguiente ecuación diferencial exacta
 
 \end_layout
 
+\begin_layout Problem
+Verificamos si es exacta 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+M_{y} & = & 3y^{2}\\
+N_{x} & = & 3y^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+5 puntos
+\end_layout
+
+\begin_layout Problem
+
+\end_layout
+
+\begin_layout Problem
+por lo que es exacta
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial f}{\partial x} & = & x^{3}+y^{3}\\
+f & = & \int x^{3}+y^{3}dx+g\left(y\right)\\
+f & = & \frac{x^{4}}{4}+xy^{3}+g\left(y\right)\\
+\frac{\partial f}{\partial y} & = & 3xy^{2}+g'\left(y\right)\\
+3xy^{2} & = & 3xy^{2}+g'\left(y\right)\\
+\implies\\
+g'\left(y\right) & = & 0\\
+\implies\\
+g\left(y\right) & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo que la solución es 
+\begin_inset Formula $\frac{x^{4}}{4}+xy^{3}=0$
+\end_inset
+
+
+\end_layout
+
 \begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -184,16 +258,117 @@ Resolver
 
 \end_layout
 
+\begin_layout Problem
+Sea 
+\begin_inset Formula 
+\begin{eqnarray*}
+u & = & -5x+y\\
+\frac{du}{dx} & = & -5+\frac{dy}{dx}\\
+\implies\\
+\frac{dy}{dx} & = & \frac{du}{dx}+5
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+10 puntos
+\end_layout
+
+\begin_layout Problem
+por lo que la ecuación queda de la forma 
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{du}{dx}+5 & = & u^{2}-4\\
+\frac{du}{dx} & = & u^{2}-9\\
+\frac{du}{u^{2}-9} & = & dx\\
+\frac{du}{\left(u-3\right)\left(u+3\right)} & = & dx\\
+\mbox{10 puntos}\\
+\mbox{fracciones parciales}\\
+\left(\frac{\frac{1}{6}}{u-3}+\frac{-\frac{1}{6}}{u+3}\right)du & = & dx\\
+\left(\frac{1}{6}\int\frac{1}{u-3}-\frac{1}{6}\int\frac{1}{u+3}\right)du & = & \int dx\\
+\frac{1}{6}\ln\left|u-3\right|-\frac{1}{6}\ln\left|u+3\right| & = & x+c\\
+\ln\left|u-3\right|-\ln\left|u+3\right| & = & 6\left(x+c\right)\\
+\ln\frac{\left|u-3\right|}{\left|u+3\right|} & = & 6\left(x+c\right)\\
+\ln\frac{\left|-5x+y-3\right|}{\left|-5x+y+3\right|} & = & 6\left(x+c\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Problem
 Resolver la ecuación diferencial llevando a su forma lineal 
 \begin_inset Formula 
-\[
-xy'+y=2x
-\]
+\begin{eqnarray*}
+xy'+y & = & 2x\\
+y'+\frac{1}{x}y & = & 2
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo que 
+\begin_inset Formula $P\left(x\right)=\frac{1}{x}$
+\end_inset
+
+ y 
+\begin_inset Formula $Q\left(x\right)=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+esta ecuación diferencial tiene por factor integrante 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mu & = & e^{\int\frac{1}{x}dx}\\
+\mu & = & e^{\ln\left(x\right)}\\
+\mu & = & x
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+xy'+y & = & 2x\\
+\frac{d}{dx}\left(xy\right) & = & 2x\\
+d\left(xy\right) & = & 2xdx\\
+xy & = & \int2xdx+c\\
+xy & = & x^{2}+c\\
+y & = & \frac{x^{2}+c}{x}
+\end{eqnarray*}
 
 \end_inset
 
