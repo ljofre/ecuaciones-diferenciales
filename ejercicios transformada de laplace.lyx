@@ -392,5 +392,89 @@ y\left(t\right) & = & 2e^{-4t}+e^{-4t}t
 
 \end_layout
 
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Resuelva la siguiente ecuación diferencial por transformada de Laplace con
+ las condiciones iniciales 
+\begin_inset Formula $y\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+y'-y & = & \sin\left(t\right)\\
+\mathcal{L}\\
+\mathcal{L}\left\{ y'\right\} -\mathcal{L}\left\{ y\right\}  & = & \mathcal{L}\left\{ \sin\left(t\right)\right\} \\
+sY-y\left(0\right)-Y & = & \frac{1}{s^{2}+1^{2}}\\
+sY-0-Y & = & \frac{1}{s^{2}+1^{2}}\\
+Y\left(s-1\right) & = & \frac{1}{s^{2}+1}\\
+Y & = & \frac{1}{\left(s^{2}+1\right)\left(s-1\right)}\\
+\mbox{fracciones parciales}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{\left(s^{2}+1\right)\left(s-1\right)} & = & \frac{A}{\left(s^{2}+1\right)}+\frac{B}{\left(s-1\right)}\\
+1 & = & A\left(s-1\right)+B\left(s^{2}+1\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+cuando 
+\begin_inset Formula $s=1$
+\end_inset
+
+ entonces 
+\begin_inset Formula $B=\frac{1}{2}$
+\end_inset
+
+ y cuando 
+\begin_inset Formula $s=0$
+\end_inset
+
+ entonces 
+\begin_inset Formula $1=-A+B$
+\end_inset
+
+, como conocemos el valor de 
+\begin_inset Formula $B$
+\end_inset
+
+, entonces 
+\begin_inset Formula $1=-A+\frac{1}{2}\implies A=-\frac{1}{2}$
+\end_inset
+
+, luego 
+\begin_inset Formula 
+\begin{eqnarray*}
+Y & = & \frac{1}{\left(s^{2}+1\right)\left(s-1\right)}\\
+Y & = & \frac{A}{\left(s^{2}+1\right)}+\frac{B}{\left(s-1\right)}\\
+Y & = & \frac{-\frac{1}{2}}{\left(s^{2}+1\right)}+\frac{\frac{1}{2}}{\left(s-1\right)}\\
+\mathcal{L}^{-1}\\
+y\left(t\right) & = & -\frac{1}{2}\mathcal{L}^{-1}\left\{ \frac{1}{\left(s^{2}+1\right)}\right\} +\frac{1}{2}\mathcal{L}^{-1}\left\{ \frac{1}{\left(s-1\right)}\right\} \\
+y\left(t\right) & = & -\frac{1}{2}\sin\left(t\right)+\frac{1}{2}e^{t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
