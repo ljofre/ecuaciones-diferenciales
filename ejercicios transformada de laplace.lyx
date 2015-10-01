@@ -4,6 +4,10 @@
 \begin_header
 \textclass article
 \use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
 \maintain_unincluded_children false
 \language spanish
 \language_package default
@@ -69,7 +73,200 @@
 
 \begin_body
 
+\begin_layout Problem
+Resuelva la siguiente ecuación diferencial por transformada de Laplace
+\begin_inset Formula 
+\begin{eqnarray*}
+y'-y & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+ con las siguientes condiciones iniciales 
+\begin_inset Formula $y\left(0\right)=0$
+\end_inset
+
+, asumiendo que 
+\begin_inset Formula $Y=Y\left(s\right)$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+y'-y & = & 1\\
+\mathcal{L}\\
+\mathcal{L}\left\{ y'\right\} -\mathcal{L}\left\{ y\right\}  & = & \mathcal{L}\left\{ 1\right\} \\
+\left(s\cdot Y-y\left(0\right)\right)-Y & = & \frac{1}{s}\\
+\left(s\cdot Y-0\right)-Y & = & \frac{1}{s}\\
+s\cdot Y-Y & = & \frac{1}{s}\\
+Y\left(s-1\right) & = & \frac{1}{s}\\
+Y & = & \frac{1}{s\left(s-1\right)}\\
+\mbox{fraccciones parciales}\\
+Y & = & \frac{A}{s}+\frac{B}{\left(s-1\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{s\left(s-1\right)} & = & \frac{A}{s}+\frac{B}{\left(s-1\right)}\\
+1 & = & \left(s-1\right)A+sB
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+cuando 
+\begin_inset Formula $s=0$
+\end_inset
+
+ entonces 
+\begin_inset Formula $A=-1$
+\end_inset
+
+ y cuando 
+\begin_inset Formula $s=1$
+\end_inset
+
+ entonces 
+\begin_inset Formula $B=1$
+\end_inset
+
+, por lo que la ecuación queda de la siguiente manera: 
+\begin_inset Formula 
+\begin{eqnarray*}
+Y & = & -\frac{1}{s}+\frac{1}{\left(s-1\right)}\\
+\mathcal{L}^{-1}\\
+y & = & -\mathcal{L}^{-1}\left\{ \frac{1}{s}\right\} +\mathcal{L}^{-1}\left\{ \frac{1}{\left(s-1\right)}\right\} \\
+y & = & -1+e^{x}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Resuelva la siguiente ecuación diferencial por transformada de Laplace
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+y'+2y=t
+\]
+
+\end_inset
+
+ con 
+\begin_inset Formula $y\left(0\right)=-1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+y'+2y & = & t\\
+\mathcal{L}\\
+\mathcal{L}\left\{ y'\right\} +2\mathcal{L}\left\{ y\right\}  & =\mathcal{L} & \left\{ t\right\} \\
+sY-y\left(0\right)+2Y & = & \frac{1}{s^{2}}\\
+sY+1+2Y & = & \frac{1}{s^{2}}\\
+Y\left(s+2\right)+1 & = & \frac{1}{s^{2}}\\
+Y\left(s+2\right) & = & \frac{1}{s^{2}}-1\\
+Y\left(s+2\right) & = & \frac{1-s^{2}}{s^{2}}\\
+Y & = & \frac{1-s^{2}}{s^{2}\left(s+2\right)}\\
+\mbox{fracciones parciales}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+al desarrollarlo por fracciones parciales nos queda de la siguiente manera
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1-s^{2}}{s^{2}\left(s+2\right)} & = & \frac{A}{s}+\frac{B}{s^{2}}+\frac{C}{s+2}\\
+1-s^{2} & = & As\left(s+2\right)+B\left(s+2\right)+Cs^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+cuando 
+\begin_inset Formula $s=-2$
+\end_inset
+
+ entonces 
+\begin_inset Formula $1-4=4C\implies C=-\frac{3}{4}$
+\end_inset
+
+; cuando 
+\begin_inset Formula $s=0$
+\end_inset
+
+ entonces 
+\begin_inset Formula $1=2B\implies B=\frac{1}{2}$
+\end_inset
+
+, por lo que la ecuación queda como: 
+\begin_inset Formula 
+\begin{eqnarray*}
+1-s^{2} & = & As\left(s+2\right)+\frac{1}{2}\left(s+2\right)-\frac{3}{4}s^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+cuando 
+\begin_inset Formula $s=1$
+\end_inset
+
+ entonces 
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & = & 3A+\frac{3}{2}-\frac{3}{4}\\
+0 & = & 3A+\frac{3}{4}\\
+A & = & -\frac{1}{4}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo que 
+\begin_inset Formula 
+\begin{eqnarray*}
+Y & = & \frac{A}{s}+\frac{B}{s^{2}}+\frac{C}{s+2}\\
+Y & = & \frac{-\frac{1}{4}}{s}+\frac{-\frac{1}{2}}{s^{2}}+\frac{-\frac{3}{4}}{s+2}\\
+\mathcal{L}^{-1}\\
+y\left(t\right) & = & -\frac{1}{4}\mathcal{L}^{-1}\left\{ \frac{1}{s}\right\} -\frac{1}{2}\mathcal{L}^{-1}\left\{ \frac{1}{s^{2}}\right\} -\frac{3}{4}\mathcal{L}^{-1}\left\{ \frac{1}{s+2}\right\} \\
+y & = & -\frac{1}{4}-\frac{1}{2}t-\frac{3}{4}e^{-2t}
+\end{eqnarray*}
+
+\end_inset
+
 
 \end_layout
 
