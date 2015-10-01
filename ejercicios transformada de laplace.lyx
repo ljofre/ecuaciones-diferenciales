@@ -73,6 +73,14 @@ theorems-ams-extended
 
 \begin_body
 
+\begin_layout Title
+Transfomada de Laplace
+\end_layout
+
+\begin_layout Author
+Leonardo jofré, clases particulares +56 9 781 80 331
+\end_layout
+
 \begin_layout Problem
 Resuelva la siguiente ecuación diferencial por transformada de Laplace
 \begin_inset Formula 
@@ -262,7 +270,121 @@ Y & = & \frac{A}{s}+\frac{B}{s^{2}}+\frac{C}{s+2}\\
 Y & = & \frac{-\frac{1}{4}}{s}+\frac{-\frac{1}{2}}{s^{2}}+\frac{-\frac{3}{4}}{s+2}\\
 \mathcal{L}^{-1}\\
 y\left(t\right) & = & -\frac{1}{4}\mathcal{L}^{-1}\left\{ \frac{1}{s}\right\} -\frac{1}{2}\mathcal{L}^{-1}\left\{ \frac{1}{s^{2}}\right\} -\frac{3}{4}\mathcal{L}^{-1}\left\{ \frac{1}{s+2}\right\} \\
-y & = & -\frac{1}{4}-\frac{1}{2}t-\frac{3}{4}e^{-2t}
+y\left(t\right) & = & -\frac{1}{4}-\frac{1}{2}t-\frac{3}{4}e^{-2t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Resuelva la siguiente ecuación diferencial por transformada de Laplace con
+ las condiciones iniciales 
+\begin_inset Formula $y\left(0\right)=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+y'+4y & = & e^{-4t}\\
+\mathcal{L}\\
+\mathcal{L}\left\{ y'\right\} +4\mathcal{L}\left\{ y\right\}  & =\mathcal{L} & \left\{ e^{-4t}\right\} \\
+sY-y\left(0\right)+4Y & = & \frac{1}{s+4}\\
+sY-2+4Y & = & \frac{1}{s+4}\\
+sY+4Y & = & \frac{1}{s+4}+2\\
+Y\left(s+4\right) & = & \frac{1+2s+8}{s+4}\\
+Y\left(s+4\right) & = & \frac{2s+9}{s+4}\\
+Y & = & \frac{2s+9}{\left(s+4\right)^{2}}\\
+\mbox{fracciones parciales}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{2s+9}{\left(s+4\right)^{2}} & = & \frac{A}{s+4}+\frac{B}{\left(s+4\right)^{2}}\\
+2s+9 & = & A\left(s+4\right)+B
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+cuando 
+\begin_inset Formula $s=-4$
+\end_inset
+
+ entonces 
+\begin_inset Formula $B=1$
+\end_inset
+
+ por lo que la ecuación queda de la siguiente manera
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+2s+9 & = & A\left(s+4\right)+1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+luego cuando 
+\begin_inset Formula $s=0$
+\end_inset
+
+ entonces 
+\begin_inset Formula $9=4A+1\implies A=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo que 
+\begin_inset Formula 
+\begin{eqnarray*}
+Y & = & \frac{2s+9}{\left(s+4\right)^{2}}\\
+Y & = & \frac{A}{s+4}+\frac{B}{\left(s+4\right)^{2}}\\
+Y & = & \frac{2}{s+4}+\frac{1}{\left(s+4\right)^{2}}\\
+\mathcal{L}^{-1}\\
+y & = & 2\mathcal{L}^{-1}\left\{ \frac{1}{s+4}\right\} +\mathcal{L}^{-1}\left\{ \frac{1}{\left(s+4\right)^{2}}\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+utilizando el primer teorema de traslación 
+\begin_inset Formula $\mathcal{L}^{-1}\left\{ F\left(s-a\right)\right\} =e^{at}\mathcal{L}^{-1}\left\{ F\left(s\right)\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+y\left(t\right) & = & 2\mathcal{L}^{-1}\left\{ \frac{1}{s+4}\right\} +\mathcal{L}^{-1}\left\{ \frac{1}{\left(s+4\right)^{2}}\right\} \\
+y\left(t\right) & = & 2e^{-4t}+e^{-4t}\mathcal{L}^{-1}\left\{ \frac{1}{s^{2}}\right\} \\
+y\left(t\right) & = & 2e^{-4t}+e^{-4t}t
 \end{eqnarray*}
 
 \end_inset
