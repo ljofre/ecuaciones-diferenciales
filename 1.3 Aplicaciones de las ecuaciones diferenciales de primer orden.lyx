@@ -4,6 +4,10 @@
 \begin_header
 \textclass article
 \use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
 \maintain_unincluded_children false
 \language spanish
 \language_package default
@@ -92,7 +96,11 @@ La concentración de soluto en la entrada es constante y la concentración
 V\left(t\right) & : & \mbox{volumen en todo instante}\\
 Q\left(t\right) & : & \mbox{soluto en todo instante}\\
 C\left(t\right) & : & \mbox{concentración den todo instante}\\
-V_{0} & : & \mbox{volumen inicial}
+V_{0} & : & \mbox{volumen inicial}\\
+R_{1} & :\\
+R_{2} & :\\
+A & :\\
+B & :
 \end{eqnarray*}
 
 \end_inset
@@ -165,6 +173,539 @@ Campo de pendiente
 \frac{dy}{dx}=f\left(x,y\right)
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Resortes
+\end_layout
+
+\begin_layout Standard
+Ecuación diferencial del movimiento libre no amortiguado
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ddot{x}+\omega^{2}x=0
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\omega^{2}=\frac{k}{m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+pregunta 2
+\end_layout
+
+\begin_layout Standard
+La solución de la ecuaciónde cauchy euler 
+\begin_inset Formula $x^{2}y''+xy'+y=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+consideremos que 
+\begin_inset Formula $y=x^{m}\to y'=mx^{m-1}\to y''=m\left(m-1\right)x^{m-2}$
+\end_inset
+
+, que luego al remplazar en la ecuación original nos queda
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+x^{2}m\left(m-1\right)x^{m-2}+xmx^{m-1}+x^{m} & = & 0\\
+m\left(m-1\right)+m+1 & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+que tiene por raices 
+\begin_inset Formula $m_{1}=i$
+\end_inset
+
+ y 
+\begin_inset Formula $m_{2}=-i$
+\end_inset
+
+, con lo que la solución es de la forma 
+\begin_inset Formula $y=c_{1}\cos\left(\ln\left(x\right)\right)+c_{2}\sin\left(\ln\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+problema 4
+\end_layout
+
+\begin_layout Standard
+calculamos el wronskiano
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+W & = & \left|\begin{array}{cc}
+x & x\ln x\\
+1 & 1+\ln x
+\end{array}\right|\\
+ & = & x\left(1+\ln x\right)-x\ln x\\
+ & = & x
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+calculamos 
+\begin_inset Formula $W_{1}=\left|\begin{array}{cc}
+0 & x\ln x\\
+\frac{1}{x} & 1+\ln x
+\end{array}\right|=-\ln x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y cálculamos 
+\begin_inset Formula $W_{2}=\left|\begin{array}{cc}
+x & 0\\
+1 & \frac{1}{x}
+\end{array}\right|=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+por lo que 
+\begin_inset Formula $\frac{u_{1}'}{u_{2}'}=\frac{W_{1}/W}{W_{2}/W}=\frac{W_{1}}{W_{2}}=-\ln x=\ln\frac{1}{x}$
+\end_inset
+
+ por lo que 
+\begin_inset Formula $\phi=\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si la masa es de 
+\begin_inset Formula $24$
+\end_inset
+
+ libras y se estira 
+\begin_inset Formula $10$
+\end_inset
+
+ pulgadas entonces 
+\begin_inset Formula $24=k\cdot10$
+\end_inset
+
+, entonces 
+\begin_inset Formula $k=2,4$
+\end_inset
+
+, también sabemos
+\end_layout
+
+\begin_layout Standard
+tercera parte
+\end_layout
+
+\begin_layout Standard
+problema 1
+\end_layout
+
+\begin_layout Standard
+Utilice el cambio de variable 
+\begin_inset Formula $t=\sin x$
+\end_inset
+
+ para resolver la ecuación diferencial
+\end_layout
+
+\begin_layout Standard
+tercera parte
+\end_layout
+
+\begin_layout Standard
+pregunta 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=1$
+\end_inset
+
+ 
+\begin_inset Formula $k=\frac{5}{4}$
+\end_inset
+
+ y 
+\begin_inset Formula $\beta=1$
+\end_inset
+
+, que es un movimiento forzado con 
+\begin_inset Formula $f\left(t\right)=3e^{-t/2}$
+\end_inset
+
+ con 
+\begin_inset Formula $x\left(0\right)=-1$
+\end_inset
+
+ y 
+\begin_inset Formula $x'\left(0\right)=-1$
+\end_inset
+
+.
+ Al plantear la ecuación diferencial nos queda que 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+mx''+\beta x'+kx & = & 3e^{-t/2}\\
+x''+x'+\frac{5}{4}x & = & 3e^{-t/2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+que tiene por raices de 
+\begin_inset Formula $m^{2}+m+\frac{5}{4}=0$
+\end_inset
+
+ 
+\begin_inset Formula $m_{1}=-\frac{1}{2}+i$
+\end_inset
+
+ y 
+\begin_inset Formula $m_{1}=-\frac{1}{2}-i$
+\end_inset
+
+ por lo que 
+\begin_inset Formula $x_{c}=e^{-t/2}\left(c_{1}\cos\left(t\right)+c_{2}\sin\left(t\right)\right)$
+\end_inset
+
+.
+ Buscamos ahora 
+\begin_inset Formula 
+\begin{eqnarray*}
+x_{p} & = & Ae^{-t/2}\\
+x'_{p} & = & -\frac{1}{2}Ae^{-t/2}\\
+x''_{p} & = & \frac{1}{4}Ae^{-t/2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+que al remplazar en la ecuación original nos queda 
+\begin_inset Formula $\frac{1}{4}Ae^{-t/2}-\frac{1}{2}Ae^{-t/2}+\frac{5}{4}Ae^{-t/2}=3e^{-t/2}$
+\end_inset
+
+ con lo que 
+\begin_inset Formula $A=3$
+\end_inset
+
+ por lo que la solución general queda 
+\begin_inset Formula $x=e^{-t/2}\left(c_{1}\cos\left(t\right)+c_{2}\sin\left(t\right)\right)+3e^{-t/2}$
+\end_inset
+
+.
+ Si le aplicamos que 
+\begin_inset Formula $x\left(0\right)=-1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+x & = & e^{-t/2}\left(c_{1}\cos\left(t\right)+c_{2}\sin\left(t\right)\right)+3e^{-t/2}\\
+-1 & = & c_{1}+3\\
+c_{1} & = & -4
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+si derivamos
+\begin_inset Formula 
+\begin{eqnarray*}
+x' & = & \frac{1}{2}e^{-t/2}\left(\left(-c_{2}+8\right)\sin\left(t\right)+2\left(c_{2}+2\right)\cos\left(t\right)-3\right)\\
+-1 & = & \frac{1}{2}\left(2\left(c_{2}+2\right)-3\right)\\
+c_{2} & = & -\frac{1}{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+por lo que el movimiento es 
+\begin_inset Formula $x=e^{-t/2}\left(-4\cos\left(t\right)-\frac{1}{2}\sin\left(t\right)\right)+3e^{-t/2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+primera parte problema 1
+\end_layout
+
+\begin_layout Standard
+el desplazamiento inicial es de 
+\begin_inset Formula $\frac{5}{6}$
+\end_inset
+
+pies, la masa es 
+\begin_inset Formula $m=\frac{24}{32}=\frac{3}{4}$
+\end_inset
+
+ y luego la constante de elasticidad por medio de la ley de Hooke 
+\begin_inset Formula $24=\frac{5}{6}k\to k=\frac{144}{5}$
+\end_inset
+
+.
+ Luego
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+x'+\frac{\frac{144}{5}}{\frac{3}{4}}x & = & 0\\
+x'+\frac{192}{5}x & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+problema 2
+\end_layout
+
+\begin_layout Standard
+Si se sabe que 
+\begin_inset Formula $y_{1}=\ln\left(x^{2}\right)$
+\end_inset
+
+ entonces 
+\begin_inset Formula 
+\begin{eqnarray*}
+y_{2} & = & y_{1}\int\frac{e^{-\int pdx}}{y_{1}^{2}}dx\\
+y_{2} & = & \ln\left(x^{2}\right)\int\frac{e^{-\int4dx}}{\left(\ln\left(x^{2}\right)\right)^{2}}dx\\
+y_{2} & = & \ln\left(x^{2}\right)\int\frac{e^{-4x}}{\left(\ln\left(x^{2}\right)\right)^{2}}dx
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+la cual no aparece en las alternativas
+\end_layout
+
+\begin_layout Standard
+como la solución particular depende de 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ y esta no aparece en las alternativas, entonces (e) ninguna de las anteriores.
+\end_layout
+
+\begin_layout Standard
+problema 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=\frac{2}{32}$
+\end_inset
+
+ y 
+\begin_inset Formula $k$
+\end_inset
+
+ lo podemos obtener por la ley de Hooke, 
+\begin_inset Formula $2=1.5k\to k=\frac{2}{1.5}=\frac{4}{3}$
+\end_inset
+
+ por lo que 
+\begin_inset Formula $\omega=\sqrt{\frac{k}{m}}=\sqrt{\frac{\frac{4}{3}}{\frac{2}{32}}}=\frac{8\sqrt{3}}{3}$
+\end_inset
+
+ por lo que la solución es de la forma, ninguna de las alternativas tiene
+ esa frecuencia angular (e)
+\end_layout
+
+\begin_layout Standard
+problema 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+y & = & e^{x}\\
+y' & = & e^{x}\\
+y'' & = & e^{x}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+sustituyendo en la ecuación 
+\begin_inset Formula 
+\begin{eqnarray*}
+e^{x}+ae^{x}+be^{x} & = & e^{x}\\
+a+b & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+alternativa (b)
+\end_layout
+
+\begin_layout Standard
+problema 2, segunda parte
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=\frac{8}{32}=\frac{1}{4}$
+\end_inset
+
+slug y 
+\begin_inset Formula $8=2k\to k=4$
+\end_inset
+
+lb/ft , la constante de amortiguamiento es 
+\begin_inset Formula $\beta=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+luego, la ecuación es 
+\begin_inset Formula $\frac{1}{4}x''+2x'+4x=0$
+\end_inset
+
+ con las condiciones iniciales 
+\begin_inset Formula $x'\left(0\right)=-3$
+\end_inset
+
+ y 
+\begin_inset Formula $x\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+se soluciona de la forma
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+x''+8x'+16x & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con lo que la 
+\begin_inset Formula $m^{2}+8m+16=0$
+\end_inset
+
+ tiene raices 
+\begin_inset Formula $m_{1,2}=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+por lo que la solución es 
+\begin_inset Formula $x=c_{1}e^{4t}+c_{2}te^{4t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aplicando las condiciones inciales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+x & = & c_{1}e^{4t}+c_{2}te^{4t}\\
+0 & = & c_{1}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+buscamos aplicar la segunda condición inicial
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+x & = & c_{2}te^{4t}\\
+x' & = & c_{2}\left(e^{4t}+4te^{4t}\right)\\
+-3 & = & c_{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+por lo que la ecuación es 
+\begin_inset Formula $x=-3te^{4t}$
 \end_inset
 
 

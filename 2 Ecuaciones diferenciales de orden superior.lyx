@@ -2,7 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass article
+\textclass book
 \begin_preamble
 %Para dibujar gráficos bajo el lenguaje DOT
 \usepackage{dot2texi}
@@ -533,6 +533,247 @@ y_{2}=y_{1}\int\frac{e^{-\int P\left(X\right)dx}}{y_{1}^{2}}dx\label{eq:RedOrder
 \end_layout
 
 \begin_layout Problem
+Dada 
+\begin_inset Formula 
+\[
+x\sin\left(x\right)y''+\left(2\sin\left(x\right)-x\cos\left(x\right)\right)y'-\cos\left(x\right)y=\sin\left(x\right)\cos\left(x\right)-x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+no olvidando normalizar adecuadamente
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+y''+\frac{\left(2\sin\left(x\right)-x\cos\left(x\right)\right)}{x\sin\left(x\right)}y'-\frac{\cos\left(x\right)}{x\sin\left(x\right)}y & = & \frac{\sin\left(x\right)\cos\left(x\right)-x}{x\sin\left(x\right)}\\
+y''+\left(\frac{2}{x}-\cot\left(x\right)\right)y'-\frac{\cot\left(x\right)}{x}y & = & \frac{\cos\left(x\right)}{x}-\csc\left(x\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Obtener una solución de la ecuación homogénea de la forma 
+\begin_inset Formula $y_{1}=x^{\alpha}$
+\end_inset
+
+, para ello derivamos la cantidad que sean necesarias y remplazamos en la
+ ecuación diferencial homogénea asociada.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+y_{1} & = & x^{\alpha}\\
+y_{1}' & = & \alpha x^{\alpha-1}\\
+y''_{1} & = & \alpha\left(\alpha-1\right)x^{\alpha-2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+remplazamos en 
+\begin_inset Formula 
+\begin{eqnarray*}
+y''+\left(\frac{2}{x}-\cot\left(x\right)\right)y'-\frac{\cot\left(x\right)}{x}y & = & 0\\
+\alpha\left(\alpha-1\right)x^{\alpha-2}+\left(\frac{2}{x}-\cot\left(x\right)\right)\alpha x^{\alpha-1}-\frac{\cot\left(x\right)}{x}x^{\alpha} & = & 0\\
+\frac{\alpha\left(\alpha-1\right)}{x^{2}}x^{\alpha}+\frac{\left(\frac{2}{x}-\cot\left(x\right)\right)}{x}\alpha x^{\alpha}-\frac{\cot\left(x\right)}{x}x^{\alpha} & = & 0\\
+\mbox{dividir entre }x^{\alpha}\\
+\frac{\alpha\left(\alpha-1\right)}{x^{2}}+\frac{\left(\frac{2}{x}-\cot\left(x\right)\right)}{x}\alpha-\frac{\cot\left(x\right)}{x} & = & 0\\
+\mbox{multiplicar por }x^{2}\\
+\alpha\left(\alpha-1\right)+\left(\frac{2}{x}-\cot\left(x\right)\right)x\alpha-\cot\left(x\right)x & = & 0\\
+\alpha\left(\alpha-1\right)+\left(2-\cot\left(x\right)x\right)\alpha-\cot\left(x\right)x & = & 0\\
+\alpha\left(\alpha-1\right)+2\alpha-\cot\left(x\right)x\alpha-\cot\left(x\right)x & = & 0\\
+\alpha^{2}-\alpha+2\alpha-\cot\left(x\right)x\left(\alpha+1\right) & = & 0\\
+\alpha^{2}+\alpha-\cot\left(x\right)x\left(\alpha+1\right) & = & 0\\
+\left(\alpha+1\right)\alpha-\cot\left(x\right)x\left(\alpha+1\right) & = & 0\\
+\left(\alpha+1\right)\left(\alpha-\cot\left(x\right)x\right) & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+el lado derecho se anula cuando 
+\begin_inset Formula $\alpha=-1$
+\end_inset
+
+ por lo que la solución 
+\begin_inset Formula $y_{1}=x^{-1}=\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+mediante la ecuación de Abel, identificando primero que 
+\begin_inset Formula $p\left(x\right)=\left(\frac{2}{x}-\cot\left(x\right)\right)$
+\end_inset
+
+ se puede obtener la solución 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+y_{2} & = & y_{1}\int\frac{e^{-\int p\left(x\right)dx}}{y_{1}^{2}}dx\\
+ &  & \frac{1}{x}\int\frac{e^{-\int\left(\frac{2}{x}-\cot\left(x\right)\right)dx}}{\frac{1}{x^{2}}}dx\\
+ & = & \frac{1}{x}\int x^{2}e^{-\int\left(\frac{2}{x}-\cot\left(x\right)\right)dx}dx\\
+ & = & \frac{1}{x}\int x^{2}e^{\ln\left(\frac{\sin\left(x\right)}{x^{2}}\right)}dx\\
+ & = & \frac{1}{x}\int x^{2}\frac{\sin\left(x\right)}{x^{2}}dx\\
+ & = & \frac{1}{x}\int\sin\left(x\right)dx\\
+ & = & -\frac{\cos\left(x\right)}{x}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Usando variación de parámetro buscamos solución particular 
+\begin_inset Formula 
+\[
+y''+\left(\frac{2}{x}-\cot\left(x\right)\right)y'-\frac{\cot\left(x\right)}{x}y=\frac{\cos\left(x\right)}{x}-\csc\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+calculamos el Wronskiano de las soluciones de la ecuación homogénea (usamos
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+W\left(\frac{1}{x},-\frac{\cos\left(x\right)}{x}\right) & = & \left|\begin{array}{cc}
+\frac{1}{x} & -\frac{\cos\left(x\right)}{x}\\
+-\frac{1}{x^{2}} & \frac{\cos\left(x\right)}{x^{2}}+\frac{\sin\left(x\right)}{x}
+\end{array}\right|\\
+ & = & \left(\frac{1}{x}\right)\left(\frac{\cos\left(x\right)}{x^{2}}+\frac{\sin\left(x\right)}{x}\right)-\left(-\frac{1}{x^{2}}\right)\left(-\frac{\cos\left(x\right)}{x}\right)\\
+ & = & \frac{\sin\left(x\right)}{x^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+calculamos 
+\begin_inset Formula $W_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $W_{2}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+W_{1} & =\left|\begin{array}{cc}
+0 & -\frac{\cos\left(x\right)}{x}\\
+\frac{\cos\left(x\right)}{x}-\csc\left(x\right) & \frac{\cos\left(x\right)}{x^{2}}+\frac{\sin\left(x\right)}{x}
+\end{array}\right|\\
+ & =-\left(\frac{\cos\left(x\right)}{x}-\csc\left(x\right)\right)\cdot\left(-\frac{\cos\left(x\right)}{x}\right)\\
+ & =\frac{\cos^{2}\left(x\right)-x\cot\left(x\right)}{x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{align*}
+W_{2} & =\left|\begin{array}{cc}
+\frac{1}{x} & 0\\
+-\frac{1}{x^{2}} & \frac{\cos\left(x\right)}{x}-\csc\left(x\right)
+\end{array}\right|\\
+ & =\left(\frac{1}{x}\right)\left(\frac{\cos\left(x\right)}{x}-\csc\left(x\right)\right)\\
+ & =\frac{\cos\left(x\right)-x\csc\left(x\right)}{x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+calculamos 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+u_{1} & = & \int\frac{\frac{\cos^{2}\left(x\right)-x\cot\left(x\right)}{x^{2}}}{\frac{\sin\left(x\right)}{x^{2}}}dx\\
+u_{1} & = & \int\csc\left(x\right)\left(\cos^{2}\left(x\right)-x\cot\left(x\right)\right)dx\\
+ & = & \cos\left(x\right)-x\csc\left(x\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+u_{2} & = & \int\frac{\frac{\cos\left(x\right)-x\csc\left(x\right)}{x^{2}}}{\frac{\sin\left(x\right)}{x^{2}}}dx\\
+u_{2} & = & \int\csc\left(x\right)\left(\cos\left(x\right)-x\csc\left(x\right)\right)dx\\
+ & = & x\cot\left(x\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo que la solución particular es 
+\begin_inset Formula 
+\begin{eqnarray*}
+y_{p} & = & u_{1}y_{1}+u_{2}y_{2}\\
+y_{p} & = & \frac{\left(\cos\left(x\right)-x\csc\left(x\right)\right)}{x}+x\cot\left(x\right)\left(-\frac{\cos\left(x\right)}{x}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
 La función 
 \begin_inset Formula $y_{1}=x^{2}$
 \end_inset
@@ -723,8 +964,8 @@ y_{2} & = & e^{-2x}\int\frac{e^{\ln\left(x\right)-2x}}{e^{-4x}}dx\\
 y_{2} & = & e^{-2x}\int\frac{e^{\ln\left(x\right)}e^{-2x}}{e^{-4x}}dx\\
 y_{2} & = & e^{-2x}\int xe^{2x}dx\\
 y_{2} & = & e^{-2x}\left(x\frac{e^{2x}}{2}-\int\frac{e^{2x}}{2}dx\right)\\
- & = & e^{-2x}\left(x\frac{e^{2x}}{2}-\frac{e^{2x}}{4}\right)\\
- & = & \frac{1}{4}\left(2x-1\right)
+y_{2} & = & e^{-2x}\left(x\frac{e^{2x}}{2}-\frac{e^{2x}}{4}\right)\\
+y_{2} & = & \frac{1}{4}\left(2x-1\right)
 \end{eqnarray*}
 
 \end_inset

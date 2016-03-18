@@ -985,6 +985,163 @@ y\left(x\right) & = & \sqrt[n-1]{\frac{e^{\int\left(1-n\right)p\left(x\right)dx}
 
 \end_layout
 
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Una regla dice que cierta variable económica 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ satisface la ecuación diferencial 
+\begin_inset Formula $\frac{dx}{dt}=\sqrt{x}-\frac{1}{2}x$
+\end_inset
+
+.
+ Suponiendo que 
+\begin_inset Formula $x\left(4\right)=1$
+\end_inset
+
+, determine 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+.
+ ¿Existe un valor (positivo) 
+\begin_inset Formula $t_{e}$
+\end_inset
+
+ de 
+\begin_inset Formula $t$
+\end_inset
+
+ (conocido como valor de equilibrio) para el cual 
+\begin_inset Formula $\frac{dx}{dt}=0$
+\end_inset
+
+? En ese caso ¿Cuánto vale 
+\begin_inset Formula $x\left(t_{e}\right)$
+\end_inset
+
+? ¿
+\begin_inset Formula $t_{e}$
+\end_inset
+
+ da un valor máximo o un valor mínimo para 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+La ecuación diferencial es una Bernoulli con 
+\begin_inset Formula $n=\frac{1}{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{dx}{dt} & = & \sqrt{x}-\frac{1}{2}x\\
+\frac{dx}{dt}+\frac{1}{2}x & = & x^{\frac{1}{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+podemos identificar entonces que 
+\begin_inset Formula $p\left(x\right)=\frac{1}{2}$
+\end_inset
+
+ y que 
+\begin_inset Formula $q\left(x\right)=\text{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+por lo que para la sustitución 
+\begin_inset Formula $z=x^{1-n}$
+\end_inset
+
+ nos queda entonces la ecuación diferencial lineal asociada
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{dz}{dt}+\left(1-n\right)p\left(x\right)z & = & \left(1-n\right)q\left(x\right)\\
+\frac{dz}{dt}+\left(1-\frac{1}{2}\right)\frac{1}{2}z & = & \left(1-\frac{1}{2}\right)\\
+\frac{dz}{dt}+\frac{1}{4}z & = & \frac{1}{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ecuación diferencial que tiene un factor integrante asociado
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mu\left(t\right) & = & e^{\int\frac{1}{4}dt}\\
+\mu\left(t\right) & = & e^{\frac{t}{4}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+la solución para 
+\begin_inset Formula $z$
+\end_inset
+
+ es entonces 
+\begin_inset Formula 
+\begin{eqnarray*}
+z & = & \frac{\int\mu\cdot\frac{1}{2}dt}{\mu}\\
+z & = & \frac{\int e^{\frac{t}{4}}\cdot\frac{1}{2}dt+c}{e^{\frac{t}{4}}}\\
+z & = & \frac{\int e^{\frac{t}{4}}dt+c}{2e^{\frac{t}{4}}}\\
+z & = & \frac{\frac{e^{\frac{t}{4}}}{4}+c}{2e^{\frac{t}{4}}}\\
+x^{1-n} & = & \frac{\frac{e^{\frac{t}{4}}}{4}+c}{2e^{\frac{t}{4}}}\\
+x^{\frac{1}{2}} & = & \frac{\frac{e^{\frac{t}{4}}}{4}+c}{2e^{\frac{t}{4}}}\\
+x & = & \left(\frac{\frac{e^{\frac{t}{4}}}{4}+c}{2e^{\frac{t}{4}}}\right)^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aplicando las condiciones iniciales nos queda que 
+\begin_inset Formula 
+\begin{eqnarray*}
+x\left(4\right) & = & 1\\
+\left(\frac{1}{8}+c_{1}e^{-\frac{4}{4}}\right)^{2} & = & 1\\
+\left(\frac{1}{8}+c_{1}e^{-1}\right)^{2} & = & 1\\
+\left(\frac{1}{8}+\frac{c_{1}}{e}\right)^{2} & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
 \begin_layout Example
 Resolver la siguiente ecuación diferencial: Luego de pasarla a la forma
  estándar nos damos cuenta que es una ecuación de Bernoulli con 

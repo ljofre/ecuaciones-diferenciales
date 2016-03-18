@@ -126,6 +126,64 @@ Una lancha a motor se mueve en agua calma con velocidad de
  de la lancha.
 \end_layout
 
+\begin_layout Problem
+Aplicando la segunda ley de Newton 
+\begin_inset Formula 
+\[
+m\frac{dv}{dt}=-kv
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+La cual es una ecuación en variables separables, de tal manera que 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\frac{dv}{v}=-\frac{k}{m}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+integrando nos queda que 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+m\int\frac{dv}{v} & = & -k\int dt\\
+\ln\left(v\right) & = & -\frac{k}{m}t+c\\
+v & = & e^{-\frac{k}{m}t+c}\\
+v & = & v_{0}e^{-\frac{k}{m}t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+que luego de aplicar las condiciones iniciales nos queda que 
+\begin_inset Formula $v\left(0\right)=10$
+\end_inset
+
+ y 
+\begin_inset Formula $v\left(20\right)=6$
+\end_inset
+
+ con lo que se genera el siguiente sistema de ecuaciones lineales.
+ 
+\end_layout
+
 \begin_layout --Separator--
 
 \end_layout
@@ -164,6 +222,47 @@ Función Gamma
 
 \end_layout
 
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ t^{\alpha}\right\} =\int_{0}^{\infty}t^{\alpha}e^{-st}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+si consideramos 
+\begin_inset Formula $u=st$
+\end_inset
+
+ por lo que 
+\begin_inset Formula $t=\frac{u}{s}$
+\end_inset
+
+ y 
+\begin_inset Formula $dt=\frac{du}{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{L}\left\{ t^{\alpha}\right\}  & = & \int_{0}^{\infty}\left(\frac{u}{s}\right)^{\alpha}e^{-u}\frac{du}{s}\\
+ & = & \int_{0}^{\infty}\frac{u^{\alpha}}{s^{\alpha}}e^{-u}\frac{du}{s}\\
+ & = & \frac{\int_{0}^{\infty}u^{\alpha}e^{-u}du}{s^{\alpha+1}}\\
+ & = & \frac{\Gamma\left(\alpha+1\right)}{s^{\alpha+1}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout --Separator--
 
 \end_layout
@@ -191,6 +290,21 @@ Demostrar que si
 \end_inset
 
 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{L}\left\{ t^{n}f\left(t\right)\right\}  & = & \int t^{n}f\left(t\right)e^{-st}dt
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+al aplicar integración por partes nos queda que
 \end_layout
 
 \begin_layout --Separator--

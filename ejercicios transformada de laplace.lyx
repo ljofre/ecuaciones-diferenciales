@@ -78,7 +78,11 @@ Transfomada de Laplace
 \end_layout
 
 \begin_layout Author
-Leonardo jofré, clases particulares +56 9 781 80 331
+Leonardo jofré, clases particulares +56 9 781 80331
+\end_layout
+
+\begin_layout Standard
+correo: ljofre2146@gmail.com
 \end_layout
 
 \begin_layout Problem
@@ -469,6 +473,139 @@ Y & = & \frac{-\frac{1}{2}}{\left(s^{2}+1\right)}+\frac{\frac{1}{2}}{\left(s-1\r
 \mathcal{L}^{-1}\\
 y\left(t\right) & = & -\frac{1}{2}\mathcal{L}^{-1}\left\{ \frac{1}{\left(s^{2}+1\right)}\right\} +\frac{1}{2}\mathcal{L}^{-1}\left\{ \frac{1}{\left(s-1\right)}\right\} \\
 y\left(t\right) & = & -\frac{1}{2}\sin\left(t\right)+\frac{1}{2}e^{t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Problemas tipo
+\end_layout
+
+\begin_layout Subsection
+Ejercicios de propiedades de la transformada de laplace
+\end_layout
+
+\begin_layout Standard
+Las operaciones de la transformada de laplace son fundamentales para encontrar
+ la transformada de laplace de funciones más complejas o composiciones de
+ funciones, especialemente la transformada inversa de funciones que no son
+ algebraicas, pero cuya derivada si es algebraica, por ejemplo la función
+ logaritmo y las funciones trigonométricas inversas.
+\end_layout
+
+\begin_layout Problem
+resuelva usando propiedades
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\mathcal{L}^{-1}\left\{ \ln\left(1+s^{2}\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ t\int_{0}^{t}\sin\left(t\right)dt\right\} =-F'\left(s\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+buscamos 
+\begin_inset Formula 
+\begin{eqnarray*}
+F\left(s\right) & = & \mathcal{L}\left\{ \int_{0}^{t}\sin\left(t\right)dt\right\} \\
+F\left(s\right) & = & \frac{\mathcal{L}\left\{ \sin\left(t\right)\right\} }{s}\\
+F\left(s\right) & = & \frac{\frac{1}{s^{2}+1}}{s}\\
+F\left(s\right) & = & \frac{1}{s\left(s^{2}+1\right)}\\
+F'\left(s\right) & = & \frac{-3s^{2}-1}{\left(s^{3}+s\right)^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo tanto 
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ t\int_{0}^{t}\sin\left(t\right)dt\right\} =\frac{3s^{2}+1}{\left(s^{3}+s\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Calcule 
+\begin_inset Formula $\mathcal{L}\left\{ f\left(t\right)\right\} $
+\end_inset
+
+ donde 
+\begin_inset Formula $f\left(t\right)=\frac{a}{b}t$
+\end_inset
+
+ es la función serrucho periódica
+\end_layout
+
+\begin_layout Problem
+Evidentemente nos falta el periodo de la función, asumiremos que es algún
+ número positivo 
+\begin_inset Formula $T$
+\end_inset
+
+, luego 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{L}\left\{ f\left(t\right)\right\}  & = & \frac{1}{1-e^{-sT}}\int_{0}^{T}e^{-st}\frac{a}{b}tdt\\
+\mathcal{L}\left\{ f\left(t\right)\right\}  & = & \frac{\frac{a}{b}}{1-e^{-sT}}\int_{0}^{T}e^{-st}tdt
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+integrando por partes 
+\begin_inset Formula $t=u$
+\end_inset
+
+ entonces 
+\begin_inset Formula $dt=du$
+\end_inset
+
+, 
+\begin_inset Formula $e^{-st}dt=dv$
+\end_inset
+
+ entonces 
+\begin_inset Formula $-\frac{e^{-st}}{s}=v$
+\end_inset
+
+, nos queda entonces que 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{L}\left\{ f\left(t\right)\right\}  & = & \frac{\frac{a}{b}}{1-e^{-sT}}\left(t\left(-\frac{e^{-st}}{s}\right)_{0}^{T}+\frac{1}{s}\int_{0}^{T}e^{-st}dt\right)\\
+\mathcal{L}\left\{ f\left(t\right)\right\}  & = & \frac{\frac{a}{b}}{1-e^{-sT}}\left(-\frac{e^{-sT}T}{s}+\frac{1}{s}\int_{0}^{T}e^{-st}dt\right)\\
+\mathcal{L}\left\{ f\left(t\right)\right\}  & = & \frac{\frac{a}{b}}{1-e^{-sT}}\left(-\frac{e^{-sT}T}{s}-\frac{1}{s^{2}}\left(e^{-sT}-1\right)\right)
 \end{eqnarray*}
 
 \end_inset

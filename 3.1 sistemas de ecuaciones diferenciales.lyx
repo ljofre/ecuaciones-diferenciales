@@ -382,7 +382,7 @@ c_{4}
 \end_layout
 
 \begin_layout Standard
-Sistemas de ecuaciones diferenciales no homogeneos
+Sistemas de ecuaciones diferenciales no homogéneos
 \end_layout
 
 \begin_layout Problem
@@ -444,10 +444,6 @@ Buscamos los vectores propios, primero para
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
----------------------- 1punto---------------------- 
 \end_layout
 
 \begin_layout Standard
@@ -629,10 +625,6 @@ e^{t} & 3e^{-t}
 \end_layout
 
 \begin_layout Standard
----------------------- 1 punto---------------------- 
-\end_layout
-
-\begin_layout Standard
 Por lo que ahora buscamos la solución particular 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -677,10 +669,6 @@ X_{p} & = & \left[\begin{array}{c}
 \end_layout
 
 \begin_layout Standard
----------------------- 1 punto---------------------- 
-\end_layout
-
-\begin_layout Standard
 Por lo que la solución de la ecuación diferencial es 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -702,8 +690,12 @@ X & = & c_{1}\left[\begin{array}{c}
 
 \end_layout
 
-\begin_layout Standard
----------------------- 1 punto---------------------- 
+\begin_layout Problem*
+Resolver la siguiente ecuación diferencial 
+\begin_inset Formula $ $
+\end_inset
+
+
 \end_layout
 
 \end_body
