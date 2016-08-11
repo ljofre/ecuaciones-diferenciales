@@ -86,7 +86,7 @@ Ecuaciones diferenciales lineales de orden superior
 \end_layout
 
 \begin_layout Author
-Leonardo Jofre, clases particulares Whatsapp:+56 9 7818 0331
+Leonardo Jofrecos
 \end_layout
 
 \begin_layout Section
@@ -387,7 +387,7 @@ buscamos las soluciones de la ecuación característica para encontrar las
 \begin_layout Problem
 \begin_inset Formula 
 \begin{eqnarray*}
-m^{2}+4m+3m & = & 0\\
+m^{2}+4m+3 & = & 0\\
 m & = & \frac{-4\pm\sqrt{16-12}}{2}\\
 m & = & \frac{-4\pm2}{2}\\
 m & = & -2\pm1
@@ -395,7 +395,7 @@ m & = & -2\pm1
 
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Problem

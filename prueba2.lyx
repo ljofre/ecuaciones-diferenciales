@@ -1,0 +1,305 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Prueba Solemne 2
+\end_layout
+
+\begin_layout Author
+Universidad Gabriela Mistral
+\end_layout
+
+\begin_layout Problem
+resuelva la siguiente ecuación diferencial homogénea
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{d^{4}y}{dx^{4}}+\frac{d^{2}y}{dx^{2}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+m^{4}+m^{2} & = & 0\\
+m^{2}\left(m^{2}+1\right) & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con lo que las raices posibles son 
+\begin_inset Formula 
+\begin{eqnarray*}
+m_{1} & = & 0\\
+m_{2} & = & 0\\
+m_{3} & = & i\\
+m_{4} & = & -i
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+la solución general es de la forma 
+\begin_inset Formula 
+\[
+y=c_{1}+c_{2}x+c_{3}\cos\left(x\right)+c_{4}\sin\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+resuelva la siguiente ecuación diferencial no homogénea mediante el método
+ de los coeficientes indeterminados
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+y''+4y'-2y=2x^{2}-3x+6
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+buscamos la solución homogenea 
+\begin_inset Formula 
+\begin{eqnarray*}
+m^{2}+4m-2 & = & 0\\
+m & = & \frac{-4\pm\sqrt{16+8}}{2}\\
+m & = & \frac{-4\pm\sqrt{24}}{2}\\
+m & = & \frac{-4\pm2\sqrt{6}}{2}\\
+m & = & -2\pm\sqrt{6}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo que la solución 
+\begin_inset Formula $y_{h}=c_{1}e^{\left(-2+\sqrt{6}\right)x}+c_{2}e^{\left(-2-\sqrt{6}\right)x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+luego, la solución particular es de la forma 
+\begin_inset Formula 
+\begin{eqnarray*}
+y_{k} & = & Ax^{2}+Bx+C\\
+y'_{k} & = & 2Ax+B\\
+y''_{k} & = & 2A
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+remplazando en la ecuación diferencial original nos queda que
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+2A+4\left(2Ax+B\right)-2\left(Ax^{2}+Bx+C\right) & = & 2x^{2}-3x+6\\
+\left(-2A\right)x^{2}+\left(8A-2B\right)x+\left(2A+4B-2C\right) & = & 2x^{2}-3x+6
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Por lo que 
+\begin_inset Formula 
+\begin{eqnarray*}
+-2A & = & 2\\
+8A-2B & = & -3\\
+2A+4B-2C & = & 6
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+lo que queda 
+\begin_inset Formula 
+\begin{eqnarray*}
+A & = & -1\\
+B & = & \frac{5}{2}\\
+C & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Resuelva la siguiente ecuación diferencial por transformada de Laplace con
+ las condiciones iniciales 
+\begin_inset Formula $y\left(0\right)=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+y'+4y & = & e^{-4t}\\
+\mathcal{L}\\
+\mathcal{L}\left\{ y'\right\} +4\mathcal{L}\left\{ y\right\}  & =\mathcal{L} & \left\{ e^{-4t}\right\} \\
+sY-y\left(0\right)+4Y & = & \frac{1}{s+4}\\
+sY-2+4Y & = & \frac{1}{s+4}\\
+sY+4Y & = & \frac{1}{s+4}+2\\
+Y\left(s+4\right) & = & \frac{1}{s+4}+2\\
+Y\left(s+4\right) & = & \frac{1}{\left(s+4\right)^{2}}+\frac{2}{\left(s+4\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+por lo que
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+y & = & 2\mathcal{L}^{-1}\left\{ \frac{1}{s+4}\right\} +\mathcal{L}^{-1}\left\{ \frac{1}{\left(s+4\right)^{2}}\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+utilizando el primer teorema de traslación 
+\begin_inset Formula $\mathcal{L}^{-1}\left\{ F\left(s-a\right)\right\} =e^{at}\mathcal{L}^{-1}\left\{ F\left(s\right)\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+y\left(t\right) & = & 2\mathcal{L}^{-1}\left\{ \frac{1}{s+4}\right\} +\mathcal{L}^{-1}\left\{ \frac{1}{\left(s+4\right)^{2}}\right\} \\
+y\left(t\right) & = & 2e^{-4t}+e^{-4t}\mathcal{L}^{-1}\left\{ \frac{1}{s^{2}}\right\} \\
+y\left(t\right) & = & 2e^{-4t}+e^{-4t}t
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

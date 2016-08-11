@@ -88,24 +88,13 @@ Leonardo Andrés Jofré Flor
 \end_layout
 
 \begin_layout Abstract
-Las ecuaciones diferenciales son ecuaciones cuya espacio solución son un
+Las ecuaciones diferenciales son ecuaciones cuyo espacio solución son un
  conjunto de funciones.
  Estas ecuaciones aparecen desde la física primordialmente al intentar modelar
- sistemas dinámicos, como por ejemplo los del siguiente 
-\begin_inset CommandInset href
-LatexCommand href
-name "video"
-target "http://www.youtube.com/watch?v=5SJ24oHRSsU"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Las ecuaciones diferenciales nacen al intentar encontrar leyes físicas que
- no relacionan de forma simple las magnitudes, pero por otro lado, se pueden
- encontrar relaciones de dependencia entre la magnitud buscada y sus derivadas.
+ sistemas dinámicos.
+ Las ecuaciones diferenciales nacen al intentar encontrar leyes que no relaciona
+n de forma simple las magnitudes, pero por otro lado, se pueden encontrar
+ relaciones de dependencia entre la magnitud buscada y sus derivadas.
 \end_layout
 
 \begin_layout Section
@@ -119,8 +108,11 @@ El objetivo de curso es introducir al alumno a los conceptos y métodos básicos
  El curso analiza en detalle las ecuaciones diferenciales de primer y segundo
  orden, los sistemas lineales de ecuaciones diferenciales y los diversos
  métodos de resolución.
- También presenta herramientas del análisis cualitativo de las soluciones
- de diversas ecuaciones diferenciales.
+ También presenta herramientas del 
+\series bold
+análisis cualitativo
+\series default
+ de las soluciones de diversas ecuaciones diferenciales.
 \end_layout
 
 \begin_layout Exercise
@@ -791,13 +783,6 @@ con lo que podemos obtener, al integrar y al deshacer el cambio
 \left(x-y-2\right)^{2}+2x=\mathcal{C}
 \]
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Problem
-\begin_inset Formula $ $
 \end_inset
 
 
